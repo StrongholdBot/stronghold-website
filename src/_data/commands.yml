@@ -328,7 +328,7 @@
     - name: edit_default
       usage:
         - Specify either a message link or upload an image, with the same conditions as /{ session start }.
-        - This will prompt you to save a title and message as the default.
+        - This will prompt you to save a title and message as the defaults.
         - Does not start a session.
       description: Edit the default session options.
       permissions:

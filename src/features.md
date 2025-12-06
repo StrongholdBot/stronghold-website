@@ -66,16 +66,39 @@ Set up diplomacy using {% include ds-cmd.html cmd="dpm setup" %}.
 Permitted users can start and manage sessions, a generic form of an event that people can attend.
 Includes real-time participant logging, management, a time quota system, and default options.
 
+See the status of sessions with {% include ds-cmd.html cmd="session status" %}
 ### Management
 
-- Start a session using {% include ds-cmd.html cmd="sessions start" %}
-- Stop a session using {% include ds-cmd.html cmd="sessions stop" %}
-- Edit an ongoing session with {% include ds-cmd.html cmd="sessions edit" %}
-- Remove or kick a participant using {% include ds-cmd.html cmd="sessions remove" %} (see the difference in their usage sections)
+- Start a session using {% include ds-cmd.html cmd="session start" %}
+- Stop a session using {% include ds-cmd.html cmd="session stop" %}
+- Edit an ongoing session with {% include ds-cmd.html cmd="session edit" %}
+- Remove or kick a participant using {% include ds-cmd.html cmd="session remove" %} and {% include ds-cmd.html cmd="session kick" %} respectively (see the difference in their usage sections)
 
+### Time Quotas
+
+- Set a time quota using {% include ds-cmd.html cmd="session quota" %}
+- View the time a user has spent in a session using {% include ds-cmd.html cmd="session time" %}
+
+### Default Options
+
+- Set defaults for sessions using {% include ds-cmd.html cmd="session edit_default" %}
+- Start a session with the defaults using {% include ds-cmd.html cmd="session quickstart" %}
 
 ## Activity Checks
 
+Create customisable modular activity checks. Automatically send a message to a channel on a custom interval. For information regarding formatting and event sequencing, run {% include ds-cmd.html cmd="activity checks info" %}.
+
+- Start an activity check using {% include ds-cmd.html cmd="activity checks create" %}
+- Cancel an activity check using {% include ds-cmd.html cmd="activity checks cancel" %}. Use this to change options
+- Pause and resume using {% include ds-cmd.html cmd="activity checks pause" %} and {% include ds-cmd.html cmd="activity checks resume" %} respectively.
+- Run an activity check, regardless of the interval, with {% include ds-cmd.html cmd="activity checks execute" %}.
+
 ## Permission Management
+
+Manage bot permissions to fine-tune who can do what.
+
+### Roles
+
+### Users
 
 ## Logging
