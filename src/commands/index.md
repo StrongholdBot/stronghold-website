@@ -9,7 +9,7 @@ permalink: /commands/
 {% assign sorted = site.commands | sort: "order" %}
 {% assign first = true %}
 
-<ul align='left' class="command-tree">
+<ul align='left' style="h2,h3,h4{display:inline}" class="command-tree">
   {% for cmd in sorted %}
     {% assign depth = cmd.ancestry | size %}
     {% assign first = false %}
