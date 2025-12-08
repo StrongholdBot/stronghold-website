@@ -53,6 +53,9 @@
       usage:
         - Provide a tag and a forum channel to use for diplomacy.
         - If you do not specify a channel, a new one will be created.
+        - State the name of the game your server is based around.
+        - Servers can be categorised by the names of games.
+        - If you choose to create an invite link, one will be created and shown publicly in server lists.
       description:
         - Set up diplomacy.
         - You must be the server owner.
