@@ -220,7 +220,7 @@
 
         - name: add
           usage:
-            - Mention one ore more users.
+            - Mention one or more users.
             - Specify the number of points to add. This can be negative.
             - Removing points can also be done using /{ ranking points remove }.
           description: Add points to some users.
@@ -237,7 +237,7 @@
             - managePoints
 
         - name: set
-          usage: Mention one ore more users and the number of points to set them to.
+          usage: Mention one or more users and the number of points to set them to.
           description: Set points for some users.
           permissions:
             - managePoints
