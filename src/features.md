@@ -123,6 +123,18 @@ Manage permissions that apply to individual users.
 Keep track of what happens using the bot, including errors, warnings, information, and change tracking.
 After running {% include ds-cmd.html cmd="setup" %}, you can configure logging. More information can be found in the [Getting Started guide](/getting-started/).
 
+## Blacklisting
+
+A rather lacklustre system for loosely blacklisting users.
+May be developed later on for proper integration.
+Currently functions as a basic list of names.
+
+- Add a user to the blacklist using {% include ds-cmd.html cmd="blacklist add" %}
+- Remove a user from the blacklist using {% include ds-cmd.html cmd="blacklist remove" %}
+- List all blacklisted users using {% include ds-cmd.html cmd="blacklist list" %}
+- Clear the blacklist using {% include ds-cmd.html cmd="blacklist clear" %}
+- Check if a user is blacklisted using {% include ds-cmd.html cmd="blacklist find" %}
+
 ## Miscellaneous
 
 Some miscellaneous commands for utility purposes.
