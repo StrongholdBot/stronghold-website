@@ -8,11 +8,7 @@ permalink: /features/
 
 This page is an overview the main features of the bot and how they work.
 
-## Ranking
-
-This is a system where ranks are determined by points.
-
-### Ranks
+## Ranks
 
 Ranks are associated with a role and have point requirements.
 
@@ -23,7 +19,7 @@ Ranks are associated with a role and have point requirements.
 - Check which users are in a rank using {% include ds-cmd.html cmd="ranking ranks in" %}
 - List all exiting ranks using {% include ds-cmd.html cmd="ranking ranks list" %}
 
-### Points
+## Points
 
 Points determine a user's rank. Yes, they can be negative.
 
