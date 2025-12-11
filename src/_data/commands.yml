@@ -376,6 +376,36 @@
       permissions:
         - manageSessions
 
+- name: blacklist
+  description:
+    - Allows blacklisting certain usernames without any direct effects.
+    - Useful as a simple list of blacklisted users.
+    - May be improved in the future to have more features and be more useful.
+  children:
+    - name: add
+      usage: Provide the username to blacklist.
+      description: Add a username to the blacklist.
+      permissions:
+        - manageBlacklist
+
+    - name: remove
+      usage: Provide the username to remove from the blacklist.
+      description: Remove a username from the blacklist.
+      permissions:
+        - manageBlacklist
+
+    - name: list
+      description: List all usernames in the blacklist.
+
+    - name: clear
+      description: Clear the blacklist.
+      permissions:
+        - manageBlacklist
+
+    - name: find
+      usage: Provide a username to search for in the blacklist.
+      description: Find a username in the blacklist.
+
 - name: feedback
   usage:
     - Choose the type of feedback to send.
