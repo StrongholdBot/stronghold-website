@@ -376,35 +376,84 @@
       permissions:
         - manageSessions
 
-- name: blacklist
+- name: rbx
   description:
-    - Allows blacklisting certain usernames without any direct effects.
-    - Useful as a simple list of blacklisted users.
-    - May be improved in the future to have more features and be more useful.
+    - Roblox integration commands.
+    - Commands use the Roblox API to link users with features.
   children:
-    - name: add
-      usage: Provide the username to blacklist.
-      description: Add a username to the blacklist.
+    - name: blacklist
+      description: View and manage the Roblox user blacklist.
+      children:
+        - name: add
+          usage: Provide the username to blacklist.
+          description: Add a username to the blacklist.
+          permissions:
+            - manageBlacklist
+
+        - name: remove
+          usage: Provide the username to remove from the blacklist.
+          description: Remove a username from the blacklist.
+          permissions:
+            - manageBlacklist
+
+        - name: list
+          description: List all usernames in the blacklist.
+
+        - name: clear
+          description: Clear the blacklist. Server owner only.
+
+        - name: check
+          usage: Provide a username to search for in the blacklist.
+          description: Find a username in the blacklist.
+    - name: points
+      description: View and manage Roblox points.
+      children:
+        - name: add
+          usage:
+            - Provide the username(s) to add points to.
+            - Specify the number of points to add.
+          description: Add some points to one or more Roblox users.
+          permissions:
+            - managePoints
+
+        - name: remove
+          usage:
+            - Provide the username(s) to remove points from.
+            - Specify the number of points to remove.
+          description: Remove some points from one or more Roblox users.
+          permissions:
+            - managePoints
+
+        - name: list
+          description: View a leaderboard of Roblox users with the most points.
+
+        - name: get
+          description: View the number of points a Roblox user has.
+
+        - name: set
+          usage:
+            - Provide the username(s) to set the point count of.
+            - Specify the number of points to set.
+          description: Directly set the number of points a Roblox user has.
+          permissions:
+            - managePoints
+- name: c
+  description:
+    - A set of convenience commands, which do multiple things at once.
+    - These may be too specific for some use cases.
+    - You can suggest a new command for the feature you need by [contacting us](/contact/).
+  children:
+    - name: bp
+      description:
+        - Add points to a Roblox user, once per session (see /{ session start } for session management).
+        - This checks if the user is blacklisted or already marked as in the session. In either case, the command fails and does nothing.
+        - It adds the specified number of points to the user and marks them as in the session.
+        - Using /{ session stop } resets the session participation status of all users, allowing this command to be used again.
+      usage:
+        - Enter the Roblox username (of a Roblox user) to add points to.
+        - Optionally, specify how many points to add. This defaults to 1.
       permissions:
-        - manageBlacklist
-
-    - name: remove
-      usage: Provide the username to remove from the blacklist.
-      description: Remove a username from the blacklist.
-      permissions:
-        - manageBlacklist
-
-    - name: list
-      description: List all usernames in the blacklist.
-
-    - name: clear
-      description: Clear the blacklist.
-      permissions:
-        - manageBlacklist
-
-    - name: find
-      usage: Provide a username to search for in the blacklist.
-      description: Find a username in the blacklist.
+        - managePoints
 
 - name: feedback
   usage:

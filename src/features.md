@@ -82,6 +82,36 @@ See the status of sessions with {% include ds-cmd.html cmd="session status" %}
 - Set defaults for sessions using {% include ds-cmd.html cmd="session edit_default" %}
 - Start a session with the defaults after running {% include ds-cmd.html cmd="session quickstart" %}
 
+## Roblox Integration
+
+This includes the ability to add and remove Roblox users from the blacklist, identified by their user ID. This prevents blacklist bypassing by changing your username.
+You can also assign points to Roblox users.
+
+### Blacklist
+
+- Add a user to the blacklist by using {% include ds-cmd.html cmd="rbx blacklist add" %}
+- Remove a user from the blacklist by running {% include ds-cmd.html cmd="rbx blacklist remove" %}
+- List all blacklisted users with {% include ds-cmd.html cmd="rbx blacklist list" %}
+- Clear the blacklist using {% include ds-cmd.html cmd="rbx blacklist clear" %}
+- Check if a user is blacklisted with {% include ds-cmd.html cmd="rbx blacklist check" %}
+
+### Points
+
+Point management will be denied if the user is blacklisted.
+
+- View the points of a Roblox user by running {% include ds-cmd.html cmd="rbx points get" %}
+- Assign points to a Roblox user by using {% include ds-cmd.html cmd="rbx points set" %}
+- Add points to a Roblox user using {% include ds-cmd.html cmd="rbx points add" %}
+- Remove points from a Roblox user by using {% include ds-cmd.html cmd="rbx points remove" %}
+- List all Roblox users with points with {% include ds-cmd.html cmd="rbx points list" %}
+
+## Convenience Commands
+
+A set of community-requested commands which combine multiple commands into one, for ease of use.
+Currently, there is only one. If you have any ideas, feel free to [contact us](https://discord.gg/stronghold)!
+
+- Add points to a Roblox user once per session with {% include ds-cmd.html cmd="c bp" %}, while considering blacklists.
+
 ## Activity Checks
 
 Create customisable modular activity checks. Automatically send a message to a channel on a custom interval. For information regarding formatting and event sequencing, run {% include ds-cmd.html cmd="activity checks info" %}.
@@ -122,18 +152,6 @@ Manage permissions that apply to individual users.
 
 Keep track of what happens using the bot, including errors, warnings, information, and change tracking.
 After running {% include ds-cmd.html cmd="setup" %}, you can configure logging. More information can be found in the [Getting Started guide](/getting-started/).
-
-## Blacklisting
-
-A rather lacklustre system for loosely blacklisting users.
-May be developed later on for proper integration.
-Currently functions as a basic list of names.
-
-- Add a user to the blacklist using {% include ds-cmd.html cmd="blacklist add" %}
-- Remove a user from the blacklist using {% include ds-cmd.html cmd="blacklist remove" %}
-- List all blacklisted users using {% include ds-cmd.html cmd="blacklist list" %}
-- Clear the blacklist using {% include ds-cmd.html cmd="blacklist clear" %}
-- Check if a user is blacklisted using {% include ds-cmd.html cmd="blacklist find" %}
 
 ## Miscellaneous
 
