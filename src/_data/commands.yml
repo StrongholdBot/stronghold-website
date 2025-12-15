@@ -454,6 +454,34 @@
         - Optionally, specify how many points to add. This defaults to 1.
       permissions:
         - managePoints
+- name: proxy
+  description:
+    - Manage custom names for any of the bot's commands (aliases).
+    - This allows you to create shortcuts for commands you use often.
+  children:
+    - name: add
+      usage:
+        - Provide the custom name to use as a shortcut.
+        - Provide the full command to run when the custom name is used.
+        - You can only have 50 custom names per server.
+        - The custom name must be less than 32 characters long and can only contain letters, numbers, hyphens, and underscores.
+        - The custom name cannot be the same as an existing command name.
+        - This command has a very long cooldown after several uses!! Please be sure of your choices!
+      description: Add a custom name for a command.
+      permissions:
+        - manageProxies
+
+    - name: remove
+      usage: Provide the custom name to remove.
+      description: Remove a custom name.
+      permissions:
+        - manageProxies
+    
+    - name: list
+      description: List all custom names in this server.
+
+    - name: clear
+      description: Clear all custom names in this server. Server owner only.
 
 - name: feedback
   usage:
