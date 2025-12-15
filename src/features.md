@@ -82,6 +82,15 @@ See the status of sessions with {% include ds-cmd.html cmd="session status" %}
 - Set defaults for sessions using {% include ds-cmd.html cmd="session edit_default" %}
 - Start a session with the defaults after running {% include ds-cmd.html cmd="session quickstart" %}
 
+## Custom Commands (Aliases/Proxies)
+
+Create custom commands that redirect to other commands. This is useful for styling and shortening frequently used commands.
+
+- Add a custom command name by using {% include ds-cmd.html cmd="proxy add" %}
+- Remove a custom command with {% include ds-cmd.html cmd="proxy remove" %}
+- List all custom commands using {% include ds-cmd.html cmd="proxy list" %}
+- Clear all custom commands by running {% include ds-cmd.html cmd="proxy clear" %}
+
 ## Roblox Integration
 
 This includes the ability to add and remove Roblox users from the blacklist, identified by their user ID. This prevents blacklist bypassing by changing your username.
