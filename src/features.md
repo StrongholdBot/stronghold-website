@@ -11,6 +11,7 @@ This page is an overview the main features of the bot and how they work.
 ## Ranks
 
 Ranks are associated with a role and have point requirements.
+They can also be configured to stack (to not be removed if a user has a higher rank).
 
 - View a user's ranking details using {% include ds-cmd.html cmd="ranking view" %}
 - Add ranks with {% include ds-cmd.html cmd="ranking ranks add" %}, or multiple at once with {% include ds-cmd.html cmd="ranking ranks add_bulk" %}
@@ -23,17 +24,23 @@ Ranks are associated with a role and have point requirements.
 
 Points determine a user's rank. Yes, they can be negative.
 
-- Points can be added to and removed from users using {% include ds-cmd.html cmd="ranking points add" %} and {% include ds-cmd.html cmd="ranking points remove" %}
+- Points can be added to and removed from Discord users using {% include ds-cmd.html cmd="ranking points add" %} and {% include ds-cmd.html cmd="ranking points remove" %}
 - Points can also be directly set with {% include ds-cmd.html cmd="ranking points set" %}
-- View a user's points using {% include ds-cmd.html cmd="ranking view" %}
+- View a Discord user's points using {% include ds-cmd.html cmd="ranking view" %}
 - View the point leaderboard using {% include ds-cmd.html cmd="ranking points lb" %}
 
 ## Diplomacy
 
-This is a system where allowed members of servers can send messages to and manage relations with other servers.
+Allowed members of a server can send messages to and manage relations with other servers.
 Includes efficient two-way requests and convenient cross-server messaging.
 
 Set up diplomacy using {% include ds-cmd.html cmd="dpm setup" %}.
+Be warned, this exposes some public information about your server to everyone else, including the owner, server ID, and other data.
+
+### Messages
+
+- Send a diplomatic message using {% include ds-cmd.html cmd="dpm send" %}
+- Alternatively, reply to one of Stronghold's messages in a diplomacy thread to directly send a message (reply mention must be enabled)
 
 ### Allies
 
@@ -53,19 +60,16 @@ Set up diplomacy using {% include ds-cmd.html cmd="dpm setup" %}.
 - Remove a neutral server using {% include ds-cmd.html cmd="dpm neutrals remove" %}
 - List all neutrals server using {% include ds-cmd.html cmd="dpm neutrals list" %}
 
-### Messages
+## Sessions (Deployments/Events)
 
-- Send a diplomatic message using {% include ds-cmd.html cmd="dpm send" %}
-- Alternatively, reply to one of Stronghold's messages in a diplomacy thread to send what you say directly (ping must be enabled)
-
-## Sessions
-
-Permitted users can start and manage sessions, a generic form of an event that people can attend.
+Permitted users can start and manage sessions, a generic form of an event that anyone can attend.
 Includes real-time participant logging, management, a time quota system, and default options.
 
-See the status of sessions with {% include ds-cmd.html cmd="session status" %}
+View the status of sessions with {% include ds-cmd.html cmd="session status" %}
 
 ### Management
+
+Manage the status and participants of a session.
 
 - Start a session by running {% include ds-cmd.html cmd="session start" %}
 - Stop a session using {% include ds-cmd.html cmd="session stop" %}
@@ -74,17 +78,21 @@ See the status of sessions with {% include ds-cmd.html cmd="session status" %}
 
 ### Time Quotas
 
+Filter participants by time spent and check who has met the quota.
+
 - Set a time quota using {% include ds-cmd.html cmd="session quota" %}
 - View the time a user has spent in a session with {% include ds-cmd.html cmd="session time" %}
 
 ### Default Options
+
+Quickly start sessions with commonly used options.
 
 - Set defaults for sessions using {% include ds-cmd.html cmd="session edit_default" %}
 - Start a session with the defaults after running {% include ds-cmd.html cmd="session quickstart" %}
 
 ## Custom Commands (Aliases/Proxies)
 
-Create custom commands that redirect to other commands. This is useful for styling and shortening frequently used commands.
+Create custom commands that redirect to other commands (only Stronghold's commands). This is useful for styling and shortening frequently used commands.
 
 - Add a custom command name by using {% include ds-cmd.html cmd="proxy add" %}
 - Remove a custom command with {% include ds-cmd.html cmd="proxy remove" %}
@@ -93,10 +101,14 @@ Create custom commands that redirect to other commands. This is useful for styli
 
 ## Roblox Integration
 
-This includes the ability to add and remove Roblox users from the blacklist, identified by their user ID. This prevents blacklist bypassing by changing your username.
+Includes the ability to add and remove Roblox users from the blacklist, identified by their user ID.
+This prevents blacklist bypassing by changing your username.
 You can also assign points to Roblox users.
 
 ### Blacklist
+
+List and manage the Roblox user blacklist.
+Doesn't affect anything outside Roblox integration.
 
 - Add a user to the blacklist by using {% include ds-cmd.html cmd="rbx blacklist add" %}
 - Remove a user from the blacklist by running {% include ds-cmd.html cmd="rbx blacklist remove" %}
@@ -106,7 +118,8 @@ You can also assign points to Roblox users.
 
 ### Points
 
-Point management will be denied if the user is blacklisted.
+Attempting to add points to a blacklisted user leads to the command failing.
+Roblox user points do not count towards any ranks (there is no rank system for Roblox points).
 
 - View the points of a Roblox user by running {% include ds-cmd.html cmd="rbx points get" %}
 - Assign points to a Roblox user by using {% include ds-cmd.html cmd="rbx points set" %}
