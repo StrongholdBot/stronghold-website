@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Terms of Service"
+permalink: /tos/
+---
+
 # Terms of Service for Stronghold
 Last Updated: 30th of December 2025
 
