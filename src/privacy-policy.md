@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Privacy Policy"
+permalink: /privacy-policy/
+---
+
 # Privacy Policy for Stronghold
 Last Updated: 30th of December 2025
 
