@@ -28,4 +28,4 @@ We do not guarantee uptime or functionality.
 We reserve the right to restrict or remove the Bot from any user or server at our discretion.
 
 ## 5. Contact
-If you have questions about these Terms, contact: @stabbyfork on Discord.
+If you have questions about these Terms, contact @stabbyfork on Discord or send an email to info@kasekorp.com.
