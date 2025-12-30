@@ -36,4 +36,4 @@ Collected data is used to:
 - You may request data deletion by contacting us at @stabbyfork on Discord or by sending an email to info@kasekorp.com.
 
 ## 5. Contact
-- If you have questions about this Privacy Policy, contact: @stabbyfork on Discord.
+- If you have questions about this Privacy Policy, contact @stabbyfork on Discord or send an email to info@kasekorp.com.
