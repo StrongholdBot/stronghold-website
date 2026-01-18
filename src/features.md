@@ -90,6 +90,12 @@ Quickly start sessions with commonly used options.
 - Set defaults for sessions using {% include ds-cmd.html cmd="session edit_default" %}
 - Start a session with the defaults after running {% include ds-cmd.html cmd="session quickstart" %}
 
+### Automatic Points
+
+Give points to session attendees automatically. Meeting the time quota can be required for receiving points.
+
+- Set a number to provide or disable automatically giving points to participants after a session is stopped with {% include ds-cmd.html cmd="session auto_points" %}
+
 ## Custom Commands (Aliases/Proxies)
 
 Create custom commands that redirect to other commands (only Stronghold's commands). This is useful for styling and shortening frequently used commands.
@@ -198,3 +204,4 @@ Run {% include ds-cmd.html cmd="invite" %} to get a link to invite the bot to yo
 ### Ping
 
 Use {% include ds-cmd.html cmd="ping" %} to see if the bot is online and calculate latency.
+
