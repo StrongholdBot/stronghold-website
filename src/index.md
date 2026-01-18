@@ -31,8 +31,8 @@ This documentation covers:
 
 ## Why Use Stronghold?
 
-- Secure
-- Modular
+- Security
+- Modularity
 - Easy setup and usage
 - Flexible use cases (not limited to just faction servers!)
 - Free of charge storage and usage
@@ -44,4 +44,5 @@ The bot is continuously being developed.
 Also, some parts of this documentation are still being written.
 
 If you don’t find what you’re looking for, check back soon (or [contact us](/contact)).
+
 
