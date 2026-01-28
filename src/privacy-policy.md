@@ -5,7 +5,7 @@ permalink: /privacy-policy/
 ---
 
 # Privacy Policy for Stronghold
-Last Updated: 30th of December 2025
+Last Updated: 28th January 2026
 
 This Privacy Policy explains how Stronghold ("the Bot") handles user data.
 
