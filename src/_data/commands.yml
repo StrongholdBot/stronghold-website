@@ -307,6 +307,78 @@
           usage: Provide a rank's name.
           description: List which users are in a rank.
 
+    - name: groups
+      description:
+        - Manage groups of roles.
+        - These act as standalone categories for roles/individual ranks.
+      children:
+        - name: list
+          description: List all role groups.
+
+        - name: create
+          usage:
+            - Specify the name of the group.
+            - Provide a list of role IDs to include in the group.
+          description: Create a role group.
+          permissions:
+            - manageRoleGroups
+
+        - name: delete
+          usage: Provide the name of the group to delete.
+          description:
+            - Delete a role group.
+            - Does not remove any roles from users. See /{ ranking groups remove } to remove roles from users.
+            - Server owner only.
+
+        - name: add
+          usage:
+            - Provide the name of the group.
+            - Provide a list of role IDs to add to the group.
+          description: Add roles to a group.
+          permissions:
+            - manageRoleGroups
+
+        - name: remove
+          usage:
+            - Provide the name of the group.
+          description:
+            - Remove roles in a group from all users who are in the group.
+            - Does not delete the group itself. See /{ ranking groups delete } to delete the group.
+          permissions:
+            - manageRoleGroups
+
+        - name: view
+          usage: Provide the name of the group to view the roles of.
+          description: View the roles in a group.
+
+        - name: get
+          usage:
+            - Mention a user.
+            - You can leave the argument blank to view your own groups.
+          description: View which role groups a user is in.
+
+    - name: prefix
+      description:
+        - Commands to manage prefixes for roles.
+        - The prefix of the highest role (that has a prefix) is used.
+      children:
+        - name: add
+          usage:
+            - Provide a role ID.
+            - Specify the prefix to use for the role. This can be up to 16 characters long.
+          description: Add a prefix to a role.
+          permissions:
+            - managePrefixes
+
+        - name: remove
+          usage: Provide a role ID.
+          description: Remove the prefix from a role.
+          permissions:
+            - managePrefixes
+
+        - name: list
+          description: List all roles with prefixes and their respective prefixes.
+
 - name: session
   description: Commands related to session management.
   children:

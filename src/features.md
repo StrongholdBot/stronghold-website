@@ -29,6 +29,14 @@ Points determine a user's rank. Yes, they can be negative.
 - View a Discord user's points using {% include ds-cmd.html cmd="ranking view" %}
 - View the point leaderboard using {% include ds-cmd.html cmd="ranking points lb" %}
 
+## Role Prefixes
+
+Automatically assign a prefix to users' nicknames, based on their highest role that has a prefix.
+
+- Add a role prefix using {% include ds-cmd.html cmd="ranking prefix add" %}
+- Remove a role prefix with {% include ds-cmd.html cmd="ranking prefix remove" %}
+- List all role prefixes by running {% include ds-cmd.html cmd="ranking prefix list" %}
+
 ## Diplomacy
 
 Allowed members of a server can send messages to and manage relations with other servers.
@@ -126,6 +134,18 @@ Roblox user points do not count towards any ranks (there is no rank system for R
 - Add points to a Roblox user using {% include ds-cmd.html cmd="rbx points add" %}
 - Remove points from a Roblox user by using {% include ds-cmd.html cmd="rbx points remove" %}
 - List all Roblox users with points with {% include ds-cmd.html cmd="rbx points list" %}
+
+## Role Groups
+
+Create groups of roles to easily assign and remove multiple roles at once. Useful for managing event roles or even ranks.
+
+- Create a role group using {% include ds-cmd.html cmd="ranking groups create" %}
+- Delete a role group with {% include ds-cmd.html cmd="ranking groups delete" %}
+- Add roles from a group to a user by running {% include ds-cmd.html cmd="ranking groups add" %}
+- Remove roles from a user using {% include ds-cmd.html cmd="ranking groups remove" %}
+- List all role groups with {% include ds-cmd.html cmd="ranking groups list" %}
+- View the roles in a group by using {% include ds-cmd.html cmd="ranking groups view" %}
+- Get the groups a user is in with {% include ds-cmd.html cmd="ranking groups user" %}
 
 ## Convenience Commands
 
