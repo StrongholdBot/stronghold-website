@@ -24,15 +24,15 @@ If you're new, start with the [Getting Started](/getting-started) guide, where y
 
 This documentation covers:
 
-- Features: the capabilities of the bot
+- [Features](/features): the capabilities of the bot
 - Configuration: settings and options
-- Commands: reference documentation for commands
-- Troubleshooting: solutions to common issues
+- [Commands](/commands): reference documentation for commands
+- [Troubleshooting](/troubleshooting): solutions to common issues
 
 ## Why Use Stronghold?
 
-- Secure
-- Modular
+- Security
+- Modularity
 - Easy setup and usage
 - Flexible use cases (not limited to just faction servers!)
 - Free of charge storage and usage
@@ -44,3 +44,5 @@ The bot is continuously being developed.
 Also, some parts of this documentation are still being written.
 
 If you don’t find what you’re looking for, check back soon (or [contact us](/contact)).
+
+

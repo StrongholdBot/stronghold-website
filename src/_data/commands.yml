@@ -450,10 +450,18 @@
     - name: time
       usage:
         - Mention a user.
-        - This also tells you whether they've met the quota (see /{ session quota } for usage of the time quota).
-      description: View the amount of time a user has spent in the ongoing session.
+      description: View the amount of time a user has spent in the ongoing session and whether they've met the quota (see /{ session quota } for usage of the time quota).
       permissions:
         - manageSessions
+
+    - name: auto_points
+      usage:
+        - Specify how many points to add to session participants after one ends.
+        - Choose whether participants need to have met the time quota to receive points. Defaults to false.
+      description: Automatically give points to participants after a session is stopped.
+      permissions:
+        - manageSessions
+        - managePoints
 
 - name: rbx
   description:
@@ -581,3 +589,4 @@
     - See <a href="https://stronghold.kasekorp.com/getting-started">the Getting Started guide</a> for usage instructions.
     - Optionally, force the setup to be redone. This clears existing configuration data.
   description: Set up the bot in your server.
+

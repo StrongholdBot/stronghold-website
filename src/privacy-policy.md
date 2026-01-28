@@ -5,7 +5,7 @@ permalink: /privacy-policy/
 ---
 
 # Privacy Policy for Stronghold
-Last Updated: 30th of December 2025
+Last Updated: 28th January 2026
 
 This Privacy Policy explains how Stronghold ("the Bot") handles user data.
 
@@ -18,6 +18,9 @@ The Bot may collect and store:
 - Attachment URLs provided to certain commands
 - Roblox usernames and user IDs provided in commands
 - Text input by the user in some Discord modals (submission/text input boxes)
+
+The Bot stores:
+- A private list of all the Discord guilds it is in, including all properties available to the bot (role IDs, channel IDs, owner ID, etc.) and whether the guild is setup within the database, for debugging purposes
 
 We do not collect message contents unless explicitly required for a feature.
 
