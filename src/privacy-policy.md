@@ -19,6 +19,9 @@ The Bot may collect and store:
 - Roblox usernames and user IDs provided in commands
 - Text input by the user in some Discord modals (submission/text input boxes)
 
+The Bot stores:
+- A private list of all the Discord guilds it is in, including all properties available to the bot (role IDs, channel IDs, owner ID, etc.) and whether the guild is setup within the database, for debugging purposes
+
 We do not collect message contents unless explicitly required for a feature.
 
 ## 2. How We Use Information
