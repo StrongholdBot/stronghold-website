@@ -144,6 +144,7 @@ Roblox user points do not count towards any ranks (there is no rank system for R
 ## Role Groups
 
 Create groups of roles to easily assign and remove multiple roles at once. Useful for managing event roles or even ranks.
+You can allow regular users to join or request role groups themselves to reduce the workload of staff members.
 
 - Create a role group using {% include ds-cmd.html cmd="ranking groups create" %}
 - Delete a role group with {% include ds-cmd.html cmd="ranking groups delete" %}
@@ -196,6 +197,12 @@ Manage permissions that apply to individual users.
 - Set permissions directly (remove any previous perms) with {% include ds-cmd.html cmd="permissions users set" %}
 - Clear all permissions by using {% include ds-cmd.html cmd="permissions users clear" %}
 
+## Settings
+
+Configure various settings to customise the bot's behavior and appearance in your server.
+
+Set the bot's profile picture in your server using {% include ds-cmd.html cmd="set bot_pfp" %}.
+
 ## Logging
 
 Keep track of what happens using the bot, including errors, warnings, information, and change tracking.
@@ -224,4 +231,3 @@ Run {% include ds-cmd.html cmd="invite" %} to get a link to invite the bot to yo
 ### Ping
 
 Use {% include ds-cmd.html cmd="ping" %} to see if the bot is online and calculate latency.
-

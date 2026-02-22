@@ -319,6 +319,8 @@
           usage:
             - Specify the name of the group.
             - Provide a list of role IDs to include in the group.
+            - Optionally, specify whether people can choose to join the group themselves using /{ ranking groups list }. This is false by default.
+            - You can also require users to be approved to join the group. If this is enabled, users can request to join the group using /{ ranking groups list }, and their request can be approved or denied by someone with the appropriate permissions in the logs channel.
           description: Create a role group.
           permissions:
             - manageRoleGroups
@@ -570,6 +572,15 @@
     - name: clear
       description: Clear all custom names in this server. Server owner only.
 
+- name: set
+  description:
+    - Manage custom settings for the bot.
+    - Settings are optional and allow you to customise the bot's behaviour and features.
+  children:
+    - name: bot_pfp
+      usage: Provide an attachment (image) to use as the bot's profile picture in this server.
+      description: Set a custom profile picture for the bot in this server. Server owner only.
+
 - name: feedback
   usage:
     - Choose the type of feedback to send.
@@ -589,4 +600,3 @@
     - See <a href="https://stronghold.kasekorp.com/getting-started">the Getting Started guide</a> for usage instructions.
     - Optionally, force the setup to be redone. This clears existing configuration data.
   description: Set up the bot in your server.
-
