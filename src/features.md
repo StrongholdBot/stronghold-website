@@ -8,7 +8,24 @@ permalink: /features/
 
 This page is an overview the main features of the bot and how they work.
 
-## Ranks
+<div class="feature-grid" data-feature-grid>
+	<a class="feature-tile" href="#ranks">Ranks</a>
+	<a class="feature-tile" href="#points">Points</a>
+	<a class="feature-tile" href="#role-prefixes">Role Prefixes</a>
+	<a class="feature-tile" href="#diplomacy">Diplomacy</a>
+	<a class="feature-tile" href="#sessions">Sessions</a>
+	<a class="feature-tile" href="#custom-commands">Custom Commands</a>
+	<a class="feature-tile" href="#roblox-integration">Roblox Integration</a>
+	<a class="feature-tile" href="#role-groups">Role Groups</a>
+	<a class="feature-tile" href="#convenience-commands">Convenience Commands</a>
+	<a class="feature-tile" href="#activity-checks">Activity Checks</a>
+	<a class="feature-tile" href="#permission-management">Permission Management</a>
+	<a class="feature-tile" href="#settings">Settings</a>
+	<a class="feature-tile" href="#logging">Logging</a>
+	<a class="feature-tile" href="#miscellaneous">Miscellaneous</a>
+</div>
+
+## Ranks {#ranks}
 
 Ranks are associated with a role and have point requirements.
 They can also be configured to stack (to not be removed if a user has a higher rank).
@@ -20,7 +37,7 @@ They can also be configured to stack (to not be removed if a user has a higher r
 - Check which users are in a rank using {% include ds-cmd.html cmd="ranking ranks in" %}
 - List all exiting ranks using {% include ds-cmd.html cmd="ranking ranks list" %}
 
-## Points
+## Points {#points}
 
 Points determine a user's rank. Yes, they can be negative.
 
@@ -29,7 +46,7 @@ Points determine a user's rank. Yes, they can be negative.
 - View a Discord user's points using {% include ds-cmd.html cmd="ranking view" %}
 - View the point leaderboard using {% include ds-cmd.html cmd="ranking points lb" %}
 
-## Role Prefixes
+## Role Prefixes {#role-prefixes}
 
 Automatically assign a prefix to users' nicknames, based on their highest role that has a prefix.
 
@@ -37,7 +54,7 @@ Automatically assign a prefix to users' nicknames, based on their highest role t
 - Remove a role prefix with {% include ds-cmd.html cmd="ranking prefix remove" %}
 - List all role prefixes by running {% include ds-cmd.html cmd="ranking prefix list" %}
 
-## Diplomacy
+## Diplomacy {#diplomacy}
 
 Allowed members of a server can send messages to and manage relations with other servers.
 Includes efficient two-way requests and convenient cross-server messaging.
@@ -68,7 +85,7 @@ Be warned, this exposes some public information about your server to everyone el
 - Remove a neutral server using {% include ds-cmd.html cmd="dpm neutrals remove" %}
 - List all neutrals server using {% include ds-cmd.html cmd="dpm neutrals list" %}
 
-## Sessions (Deployments/Events)
+## Sessions (Deployments/Events) {#sessions}
 
 Permitted users can start and manage sessions, a generic form of an event that anyone can attend.
 Includes real-time participant logging, management, a time quota system, and default options.
@@ -104,7 +121,7 @@ Give points to session attendees automatically. Meeting the time quota can be re
 
 - Set a number to provide or disable automatically giving points to participants after a session is stopped with {% include ds-cmd.html cmd="session auto_points" %}
 
-## Custom Commands (Aliases/Proxies)
+## Custom Commands (Aliases/Proxies) {#custom-commands}
 
 Create custom commands that redirect to other commands (only Stronghold's commands). This is useful for styling and shortening frequently used commands.
 
@@ -113,7 +130,7 @@ Create custom commands that redirect to other commands (only Stronghold's comman
 - List all custom commands using {% include ds-cmd.html cmd="proxy list" %}
 - Clear all custom commands by running {% include ds-cmd.html cmd="proxy clear" %}
 
-## Roblox Integration
+## Roblox Integration {#roblox-integration}
 
 Includes the ability to add and remove Roblox users from the blacklist, identified by their user ID.
 This prevents blacklist bypassing by changing your username.
@@ -141,7 +158,7 @@ Roblox user points do not count towards any ranks (there is no rank system for R
 - Remove points from a Roblox user by using {% include ds-cmd.html cmd="rbx points remove" %}
 - List all Roblox users with points with {% include ds-cmd.html cmd="rbx points list" %}
 
-## Role Groups
+## Role Groups {#role-groups}
 
 Create groups of roles to easily assign and remove multiple roles at once. Useful for managing event roles or even ranks.
 You can allow regular users to join or request role groups themselves to reduce the workload of staff members.
@@ -154,14 +171,14 @@ You can allow regular users to join or request role groups themselves to reduce 
 - View the roles in a group by using {% include ds-cmd.html cmd="ranking groups view" %}
 - Get the groups a user is in with {% include ds-cmd.html cmd="ranking groups user" %}
 
-## Convenience Commands
+## Convenience Commands {#convenience-commands}
 
 A set of community-requested commands which combine multiple commands into one, for ease of use.
 Currently, there is only one. If you have any ideas, feel free to [contact us](/stronghold)!
 
 - Add points to a Roblox user once per session with {% include ds-cmd.html cmd="c bp" %}, while considering blacklists.
 
-## Activity Checks
+## Activity Checks {#activity-checks}
 
 Create customisable modular activity checks. Automatically send a message to a channel on a custom interval. For information regarding formatting and event sequencing, run {% include ds-cmd.html cmd="activity checks info" %}.
 
@@ -170,7 +187,7 @@ Create customisable modular activity checks. Automatically send a message to a c
 - Pause and resume activity checks using {% include ds-cmd.html cmd="activity checks pause" %} and {% include ds-cmd.html cmd="activity checks resume" %} respectively.
 - Run an activity check, regardless of the interval, with {% include ds-cmd.html cmd="activity checks execute" %}.
 
-## Permission Management
+## Permission Management {#permission-management}
 
 Manage internal permissions to fine-tune who can do what with the bot.
 
@@ -197,18 +214,18 @@ Manage permissions that apply to individual users.
 - Set permissions directly (remove any previous perms) with {% include ds-cmd.html cmd="permissions users set" %}
 - Clear all permissions by using {% include ds-cmd.html cmd="permissions users clear" %}
 
-## Settings
+## Settings {#settings}
 
 Configure various settings to customise the bot's behavior and appearance in your server.
 
 Set the bot's profile picture in your server using {% include ds-cmd.html cmd="set bot_pfp" %}.
 
-## Logging
+## Logging {#logging}
 
 Keep track of what happens using the bot, including errors, warnings, information, and change tracking.
 After running {% include ds-cmd.html cmd="setup" %}, you can configure logging. More information can be found in the [Getting Started guide](/getting-started/).
 
-## Miscellaneous
+## Miscellaneous {#miscellaneous}
 
 Some miscellaneous commands for utility purposes.
 
