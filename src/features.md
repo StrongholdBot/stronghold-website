@@ -157,7 +157,7 @@ You can allow regular users to join or request role groups themselves to reduce 
 ## Convenience Commands
 
 A set of community-requested commands which combine multiple commands into one, for ease of use.
-Currently, there is only one. If you have any ideas, feel free to [contact us](https://discord.gg/stronghold)!
+Currently, there is only one. If you have any ideas, feel free to [contact us](/stronghold)!
 
 - Add points to a Roblox user once per session with {% include ds-cmd.html cmd="c bp" %}, while considering blacklists.
 
