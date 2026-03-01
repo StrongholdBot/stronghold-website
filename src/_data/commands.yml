@@ -330,7 +330,8 @@
           description:
             - Delete a role group.
             - Does not remove any roles from users. See /{ ranking groups remove } to remove roles from users.
-            - Server owner only.
+          permissions:
+            - manageRoleGroups
 
         - name: add
           usage:
