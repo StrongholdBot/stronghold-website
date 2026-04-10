@@ -14,26 +14,30 @@ The Bot may collect and store:
 
 - Discord user IDs
 - Discord server IDs
-- Command usage data (e.g., which commands are run)
-- Attachment URLs provided to certain commands
-- Roblox usernames and user IDs provided in commands
-- Text input by the user in some Discord modals (submission/text input boxes)
+- Command usage data (e.g. which commands are run)
+- Attachment URLs provided by users to certain commands (used to reference media within a guild)
+- Roblox user IDs provided by users for account linking and Bot-related features
+- Text input submitted by users through Discord modals for use in Bot features
 
-The Bot stores:
-- A private list of all the Discord guilds it is in, including all properties available to the bot (role IDs, channel IDs, owner ID, etc.) and whether the guild is setup within the database, for debugging purposes
-
+Text input collected through Discord modals is used for the specific feature it was submitted for and is not processed beyond that purpose.
+The Bot stores an internal list of Discord guilds it is in, including relevant identifiers such as role IDs, channel IDs, and server owner ID, and whether the guild is setup within the database, for debugging and configuration purposes.
 We do not collect message contents unless explicitly required for a feature.
+The Bot operates on the Discord platform and processes data provided through Discord’s services.
 
 ## 2. How We Use Information
 Collected data is used to:
 
 - Provide and improve the Bot’s features
 - Maintain stability and prevent abuse
+- Support features such as points, ranks, and permissions
+
+We do not intentionally collect personally identifiable information beyond what is required for the Bot’s functionality.
 
 ## 3. Data Storage and Security
-- Data is stored securely in a MySQL HeatWave database, provided by Oracle (hosted on Oracle Cloud).
+- Data is stored securely in a MySQL HeatWave database, hosted on Oracle Cloud, provided and encrypted by Oracle.
 - No data is shared with third parties unless required by law.
-- Data may be retained as long as necessary to provide features, after which it may be deleted.
+- If the Bot is removed from a guild, or if the guild is deleted, all data associated with the guild is deleted after 21 days. The deletion process recurs on a one-day interval. Persistent data is retained only while required for the Bot's functionality and is periodically reviewed for deletion when no longer needed. Temporary, cached data is deleted upon periodic restarts of the Bot (on a daily basis).
+- We implement appropriate technical and organisational measures, including encryption in transit and secure storage practices, to protect user data.
 
 ## 4. User Rights
 - You may request data deletion by contacting us at @stabbyfork on Discord or by sending an email to info@kasekorp.com.
