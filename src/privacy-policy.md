@@ -20,8 +20,11 @@ The Bot may collect and store:
 - Text input submitted by users through Discord modals for use in Bot features
 
 Text input collected through Discord modals is used for the specific feature it was submitted for and is not processed beyond that purpose.
-The Bot stores an internal list of Discord guilds it is in, including relevant identifiers such as role IDs, channel IDs, and server owner ID, and whether the guild is setup within the database, for debugging and configuration purposes.
+
 We do not collect message contents unless explicitly required for a feature.
+
+The Bot stores an internal list of Discord guilds it is in, including relevant identifiers such as role IDs, channel IDs, and guild owner ID, and whether the guild is setup within the database, for debugging and configuration purposes.
+
 The Bot operates on the Discord platform and processes data provided through Discord’s services.
 
 ## 2. How We Use Information
@@ -36,7 +39,7 @@ We do not intentionally collect personally identifiable information beyond what 
 ## 3. Data Storage and Security
 - Data is stored securely in a MySQL HeatWave database, hosted on Oracle Cloud, provided and encrypted by Oracle.
 - No data is shared with third parties unless required by law.
-- The Bot does not use collected data for advertising or tracking purposes.
+- The Bot does not use personal data for advertising or tracking purposes. Advertisements are non-personalised and may only be shown based on guild-level configuration.
 - If the Bot is removed from a guild, or if the guild is deleted, all data associated with the guild is deleted after 21 days. The deletion process recurs on a one-day interval. Persistent data is retained only while required for the Bot's functionality and is periodically reviewed for deletion when no longer needed. Temporary, cached data is deleted upon periodic restarts of the Bot (on a daily basis).
 - We implement appropriate technical and organisational measures, including encryption in transit and secure storage practices, to protect user data.
 
@@ -44,7 +47,7 @@ We do not intentionally collect personally identifiable information beyond what 
 
 - The Bot may display or distribute advertisements or promotional content from third parties. These advertisements are manually reviewed but are not owned or operated by the Bot.
 - We do not guarantee the accuracy, safety, or reliability of any third-party content, services, or websites linked through advertisements. Any interactions, transactions, or engagements with third parties are solely between the user and the third party.
-- The Bot does not use personal data to target advertisements, and all advertisements are non-personalised.
+- Advertisements may be displayed based on guild-level configuration (such as a designated “main game”) to ensure relevance to the community. This form of contextual display is not based on individual user data, behaviour, or personal information.
 - By interacting with third-party content, you acknowledge that you do so at your own discretion and risk.
 
 ## 5. User Rights
