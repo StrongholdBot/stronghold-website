@@ -581,6 +581,11 @@
     - name: bot_pfp
       usage: Provide an attachment (image) to use as the bot's profile picture in this server.
       description: Set a custom profile picture for the bot in this server. Server owner only.
+    - name: ads
+      usage:
+        - Specify whether to show ads for the person running the command in that server.
+        - If not specified, ads will be disabled.
+      description: If enabled, adverts may be shown in various places. Enabled by default.
 
 - name: feedback
   usage:

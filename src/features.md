@@ -220,6 +220,8 @@ Configure various settings to customise the bot's behavior and appearance in you
 
 Set the bot's profile picture in your server using {% include ds-cmd.html cmd="set bot_pfp" %}.
 
+Enable/disable adverts for yourself in a server with {% include ds-cmd.html cmd="set ads" %}.
+
 ## Logging {#logging}
 
 Keep track of what happens using the bot, including errors, warnings, information, and change tracking.
