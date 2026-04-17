@@ -506,6 +506,17 @@
           permissions:
             - managePoints
 
+        - name: add_d
+          usage:
+            - Mention (@user) or provide the ID of one or more Discord users.
+            - Specify the number of points to add.
+          description:
+            - Add points to the linked Roblox account of one or more Discord users.
+            - Uses RoVer for account linking, so users must have linked their accounts at https://rover.link/verify
+            - The RoVer bot must be in the server to use this command. Install it from https://rover.link/
+          permissions:
+            - managePoints
+
         - name: remove
           usage:
             - Provide the username(s) to remove points from.
