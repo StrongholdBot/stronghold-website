@@ -141,7 +141,7 @@ You can also assign points to Roblox users.
 List and manage the Roblox user blacklist.
 Doesn't affect anything outside Roblox integration.
 
-- Add a user to the blacklist by using {% include ds-cmd.html cmd="rbx blacklist add" %}
+- Add a user to the blacklist by using {% include ds-cmd.html cmd="rbx blacklist add" %} permanently/temporarily, preventing point gain
 - Remove a user from the blacklist by running {% include ds-cmd.html cmd="rbx blacklist remove" %}
 - List all blacklisted users with {% include ds-cmd.html cmd="rbx blacklist list" %}
 - Clear the blacklist using {% include ds-cmd.html cmd="rbx blacklist clear" %}

@@ -475,8 +475,10 @@
       description: View and manage the Roblox user blacklist.
       children:
         - name: add
-          usage: Provide the username to blacklist.
-          description: Add a username to the blacklist.
+          usage:
+            - Provide the username to blacklist.
+            - Optionally, specify a reason for the blacklist entry and a duration for how long the user should be blacklisted (defaults to permanent if not specified).
+          description: Add a username to the blacklist, with an optional reason and duration.
           permissions:
             - manageBlacklist
 
