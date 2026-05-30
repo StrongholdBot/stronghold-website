@@ -158,6 +158,7 @@ Roblox user points do not count towards any ranks (there is no rank system for R
 - Alternatively, add points to a Discord user's linked Roblox account with {% include ds-cmd.html cmd="rbx points add_d" %} using RoVer's API
 - Remove points from a Roblox user by using {% include ds-cmd.html cmd="rbx points remove" %}
 - List all Roblox users with points with {% include ds-cmd.html cmd="rbx points list" %}
+- Export Roblox point data using {% include ds-cmd.html cmd="rbx points export" %} to get a CSV file of user IDs, their usernames, and their points.
 
 ## Role Groups {#role-groups}
 
