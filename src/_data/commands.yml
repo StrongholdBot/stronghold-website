@@ -544,7 +544,7 @@
         - name: export
           description:
             - Export Roblox point data to a CSV file.
-            - The CSV file contains three columns: username, user ID, and points.
+            - 'The CSV file contains three columns username, user ID, and points.'
             - This can be used for backup purposes or to view the data in spreadsheet software.
             - Owner-only command due to the potential for abuse.
 - name: c
