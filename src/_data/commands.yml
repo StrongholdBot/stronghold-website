@@ -422,7 +422,9 @@
         - manageSessions
 
     - name: participants
-      usage: Choose the type of participants to list.
+      usage:
+        - Choose the type of participants to list.
+        - Also, choose how you want the participants listed (by name, mention, or user ID).
       description: List participants of the ongoing session.
 
     - name: kick

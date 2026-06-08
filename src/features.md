@@ -100,6 +100,7 @@ Manage the status and participants of a session.
 - Stop a session using {% include ds-cmd.html cmd="session stop" %}
 - Edit an ongoing session with {% include ds-cmd.html cmd="session edit" %}
 - Remove or kick a participant using {% include ds-cmd.html cmd="session remove" %} and {% include ds-cmd.html cmd="session kick" %} respectively (see the difference in their usage sections)
+- List participants of a session with {% include ds-cmd.html cmd="session participants" %}, which also has various options for formatting the list.
 
 ### Time Quotas
 
